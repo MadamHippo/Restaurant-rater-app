@@ -10,7 +10,7 @@ export class GroceryComponent implements OnInit {
 
   groceries:Grocery[];
 
-  inputGroceries = "";
+  inputGroceries:string = "";
   
   constructor() { }
 
@@ -18,26 +18,26 @@ export class GroceryComponent implements OnInit {
 
     this.groceries = [
       {
-        content: 'First item',
+        content: 'Milk',
         completed: false
       },
       {
-        content: 'Second item',
+        content: 'Eggs',
         completed: false
       }
     ]
   }
 
   toggleDone (id: number) {
-    this.groceries.map((v, i) => {
-      if (i == id) v.completed = !v.completed;
+    this.groceries.map((value, i) => {
+      if (i == id) value.completed = !value.completed;
 
-      return v;
+      return value;
     })
   }
 
   deleteItem (id:number) {
-    this.groceries = this.groceries.filter((v, i) => i !==id);
+    this.groceries = this.groceries.filter((value, i) => i !==id);
 
   }
 
