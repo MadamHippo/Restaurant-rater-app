@@ -1,7 +1,17 @@
 <div class="grocery-list">
-
-  <div class="grocery"></div>
-  <div class="id">1</div>
-  <div class="content">My Grocery List</div>
-  <button class="delete">Delete</button>
+  <form (submit)="addItem()">
+    <input
+      type="text"
+      name="inputGroceries"
+      placeholder="Enter item name..."
+      class="submit"
+      [(ngModel)] = "inputGroceries"
+    />
+    <input type = "submit" value = "Add Grocery" class = "submit" />
+  </form>
+  <div *ngFor="let item of groceries; let i = index;" class="grocery {{ (item.completed ? 'done' : '') }} ">
+    <div class="id"> {{ i }} </div>
+    <div class="content" (click)="toggleDone(i)"> {{ item.content }} </div>
+    <button class="delete" (click)="deleteItem(i)">Delete</button>
+  </div>
 </div>
