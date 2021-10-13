@@ -50,5 +50,10 @@ export class GroceryComponent implements OnInit {
     this.inputGroceries = "";
   }
 
+  onEdit(id: number) {
+    // how do I edit existing thingy //
+    
+  }
+
 }
 

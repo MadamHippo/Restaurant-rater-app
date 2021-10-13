@@ -1,12 +1,14 @@
 <form (submit)="addItem()">
+
     <input
       type="text"
       name="inputGroceries"
-      placeholder="Enter item name..."
+      placeholder=" Enter item name..."
       class="submit"
       [(ngModel)] = "inputGroceries"
     />
     <input type = "submit" value = "Add Item" class = "submit" />
+    
   </form>
   
   <div class="grocery-list">

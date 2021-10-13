@@ -1,4 +1,4 @@
 export class Grocery {
   content: string;
-  completed: boolean
+  completed: boolean;
 }
