@@ -39,6 +39,8 @@ export class GroceryComponent implements OnInit {
   deleteItem (id:number) {
     this.groceries = this.groceries.filter((value, i) => i !==id);
 
+    // filter returns a new array and as a result it has been filtered when i(index) does not match id.
+
   }
 
   addItem () {
@@ -51,8 +53,16 @@ export class GroceryComponent implements OnInit {
   }
 
   onEdit(id: number) {
-    // how do I edit existing thingy //
-    
+    this.inputGroceries = this.groceries[id].content;
+    this.deleteItem(id);
+
+
+/*    this.groceries.map((value, i) => {
+      if (i == id) value.content = content;
+
+      return value;
+    })
+      */
   }
 
 }
