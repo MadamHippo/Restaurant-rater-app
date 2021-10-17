@@ -3,8 +3,8 @@ import { Restaurant as Restaurant } from '../models/restaurant-models';
 
 @Component({
   selector: 'app-grocery',
-  templateUrl: './grocery.component.html',
-  styleUrls: ['./grocery.component.css',]
+  templateUrl: './myrestaurants.component.html',
+  styleUrls: ['./myrestaurants.component.css',]
 })
 export class RestaurantComponent implements OnInit {
 
