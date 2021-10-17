@@ -61,11 +61,14 @@ export class RestaurantComponent implements OnInit {
 
     this.restaurantName = "";
     this.restaurantRating = "";
+    this.restaurantItem = "";
   }
 
 
   onEdit(id: number) {
     this.restaurantName = this.restaurants[id].content;
+    this.restaurantRating = this.restaurants[id].rating;
+    this.restaurantItem = this.restaurants[id].restaurantItem;
     this.deleteItem(id);
 
   }

@@ -2,6 +2,10 @@
 
 Eaten at a lot of restaurants lately? Leave yourself a letter grade rating of your meal. This way you can reference it later and easily remember your favorites. Strike out the restaurants you would not revisit.
 
+# Live Demo
+
+Restaurant Rater: https://www.youtube.com/watch?v=T54bFgV4NPI
+
 # MyRestaurantRater
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
