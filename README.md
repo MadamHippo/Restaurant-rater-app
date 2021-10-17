@@ -1,6 +1,7 @@
 ![Image description](https://github.com/MadamHippo/grocery-list-app/blob/main/src/assets/KalAcademyListProject.png)
 
-Eaten at a lot of restaurants lately? Leave yourself a letter grade rating of your meal. This way you can reference it later and easily remember your favorites. Strike out the restaurants you would not revisit.
+Restaurant rater app! Leave yourself a letter grade rating of your meal. This way you can reference it later and easily remember your dining experience. Strikeout the restaurants you were less than impressed with.
+
 
 # Live Demo
 
