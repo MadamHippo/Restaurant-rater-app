@@ -1,7 +1,10 @@
+![Image description](src\assets\KalAcademyListProject.png)
+
+
 This project was generated with Angular CLI version 10.0.5.
 
 
-# GroceryListApp
+# MyRestaurantRater
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 

@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RestaurantComponent } from './myrestaurants/myrestaurants.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { RestaurantComponent } from './myrestaurants/myrestaurants.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
