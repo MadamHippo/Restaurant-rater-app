@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Restaurant as Restaurant } from '../models/restaurant-models';
 
 @Component({
-  selector: 'app-grocery',
+  selector: 'app-restaurant',
   templateUrl: './myrestaurants.component.html',
   styleUrls: ['./myrestaurants.component.css',]
 })
