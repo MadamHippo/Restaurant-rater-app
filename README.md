@@ -1,8 +1,6 @@
 ![Image description](https://github.com/MadamHippo/grocery-list-app/blob/main/src/assets/KalAcademyListProject.png)
 
-
-This project was generated with Angular CLI version 10.0.5.
-
+Eaten at a lot of restaurants lately? Leave yourself a letter grade rating of your meal. This way you can reference it later and easily remember your favorites. Strike out the restaurants you would not revisit.
 
 # MyRestaurantRater
 
