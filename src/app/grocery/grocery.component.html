@@ -1,21 +1,39 @@
 <form (submit)="addItem()">
-
     <input
       type="text"
-      name="inputGroceries"
-      placeholder=" Enter item name..."
+      name="restaurantName"
+      placeholder=" Enter restaurant name"
       class="submit"
-      [(ngModel)] = "inputGroceries"
+      [(ngModel)] = "restaurantName"
     />
-    <input type = "submit" value = "ADD ITEM" class = "submit" />
+
+    <input
+      type="restaurantItem"
+      name="restaurantItem"
+      placeholder=" Enter menu item"
+      class="submit"
+      [(ngModel)] = "restaurantItem"
+    />
+
+  <input
+      type="rating"
+      name="restaurantRating"
+      placeholder=" Enter rating"
+      class="submit"
+      [(ngModel)] = "restaurantRating"
+    />
+
+    <input type = "submit" value = "ADD RESTAURANT" class = "submit" />
+
     
   </form>
-  
-  <div class="grocery-list">
-  <div *ngFor="let item of groceries; let i = index;" class="grocery {{ (item.completed ? 'done' : '') }}">
-    <div class="id"> Item: {{ i+1 }} </div>
-    <div class="content" (click)="toggleDone(i)"> {{ item.content }} </div>
+
+  <div class="restaurant-list">
+  <div *ngFor="let item of restaurants; let i = index;" class="grocery {{ (item.neverRevisit ? 'done' : '') }}">
+    <div class="id"> Restaurant: {{ i+1 }} </div>
+    <div class="content" (click)="toggleDone(i)"> Restaurant Name: {{ item.content }}<br>Grade: {{ item.rating }}<br> Dish: {{ item.restaurantItem }} </div>
     <button class="edit" (click)="onEdit(i)">Edit</button>
     <button class="delete" (click)="deleteItem(i)">Delete</button>
   </div>
 </div>
+

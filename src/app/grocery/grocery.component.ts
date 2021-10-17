@@ -1,68 +1,73 @@
 import { Component, OnInit } from '@angular/core';
-import { Grocery } from '../models/grocery-models';
+import { Restaurant as Restaurant } from '../models/restaurant-models';
 
 @Component({
   selector: 'app-grocery',
   templateUrl: './grocery.component.html',
   styleUrls: ['./grocery.component.css',]
 })
-export class GroceryComponent implements OnInit {
+export class RestaurantComponent implements OnInit {
 
-  groceries:Grocery[];
+  restaurants:Restaurant[];
 
-  inputGroceries:string = "";
+  restaurantName:string = "";
+
+  restaurantRating:string = "";
+
+  restaurantItem: string = "";
   
   constructor() { }
 
   ngOnInit(): void {
 
-    this.groceries = [
+    this.restaurants = [
       {
-        content: 'Milk',
-        completed: false
+        content: 'Oshima Sushi',
+        rating: 'A-',
+        restaurantItem: 'Salmon Teriyaki',
+        neverRevisit: false
       },
       {
-        content: 'Eggs',
-        completed: false
+        content: 'Bucatini',
+        rating: 'B+',
+        restaurantItem: 'Frutti di Mare',
+        neverRevisit: false
       }
     ]
   }
 
   toggleDone (id: number) {
-    this.groceries.map((value, i) => {
-      if (i == id) value.completed = !value.completed;
+    this.restaurants.map((value, i) => {
+      if (i == id) value.neverRevisit = !value.neverRevisit;
 
       return value;
     })
   }
 
   deleteItem (id:number) {
-    this.groceries = this.groceries.filter((value, i) => i !==id);
+    this.restaurants = this.restaurants.filter((value, i) => i !==id);
 
     // filter returns a new array and as a result it has been filtered when i(index) does not match id.
 
   }
 
   addItem () {
-    this.groceries.push({
-      content: this.inputGroceries,
-      completed: false
+    this.restaurants.push({
+      content: this.restaurantName,
+      rating: this.restaurantRating,
+      restaurantItem: this.restaurantItem,
+      neverRevisit: false
     });
 
-    this.inputGroceries = "";
+    this.restaurantName = "";
+    this.restaurantRating = "";
   }
 
+
   onEdit(id: number) {
-    this.inputGroceries = this.groceries[id].content;
+    this.restaurantName = this.restaurants[id].content;
     this.deleteItem(id);
 
-
-/*    this.groceries.map((value, i) => {
-      if (i == id) value.content = content;
-
-      return value;
-    })
-      */
   }
 
 }
