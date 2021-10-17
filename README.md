@@ -1,4 +1,4 @@
-![Image description](src\assets\KalAcademyListProject.png)
+![Image description](https://github.com/MadamHippo/grocery-list-app/blob/main/src/assets/KalAcademyListProject.png)
 
 
 This project was generated with Angular CLI version 10.0.5.
